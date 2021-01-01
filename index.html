@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link href="reset.css" rel="stylesheet" /> <!--reset margin and padding-->
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ba40acfd49.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container" >
+        <div class="header">
+            <img src="https://images.unsplash.com/photo-1487349703519-90c8e4f426a7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1294&q=80"
+                alt="backgroundImage" />
+            <div class="clear">
+                <i class="fas fa-sync"></i>
+            </div>
+            <div id="date"></div>
+        </div>
+        <div class="content">
+            <ul id="list" >
+                <!-- <li class="item">
+                    <i class="far fa-circle" job="complete"></i>
+                    <p class="text"></p>
+                    <i class="far fa-trash-alt" style="float: right;" job="delete"></i>
+                </li> -->
+            </ul>
+        </div>
+        <div class="add-item">
+            <i class="fas fa-plus plus" id="add" style="font-size: 22px"></i>
+            <input type="text" id="input" placeholder="Add a task" maxlength="42" />
+            <span class="focus-border"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

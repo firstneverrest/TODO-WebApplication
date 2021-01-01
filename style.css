@@ -1,0 +1,164 @@
+
+body {
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 600px;
+    height: 660px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.header {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 12px 12px 0px 0px;
+}
+
+#date {
+    font-size: 26px;
+    color: white;
+    position: absolute;
+    bottom: 16px;  
+    left: 16px;  
+}
+
+.header i {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 14px;  
+    right: 14px;
+}
+
+.content {
+    max-height: 285px;
+    max-width: 600px;
+    display: block;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+
+ul {
+    margin: 10px 20px 10px 10px;
+    padding: 0 0 0 10px;
+}
+
+.item {
+    list-style-type: none;
+    padding: 10px 10px 15px 10px;
+    margin-top: 2px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.item i{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+.trash:hover {
+    color: red;
+}
+
+.plus:hover {
+    color: gray;
+    
+}
+
+.item:hover {
+    background-color: #f3f3f3;
+}
+
+.text {
+    display: inline;
+    padding-left: 5px;
+}
+
+.add-item {
+    max-width: 600px;
+    display: block;
+    margin: 0px 10px 10px 10px;
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    box-sizing: border-box;
+}
+
+#input {
+    margin-left: 10px;
+    width: 520px;
+    font-size: 20px;
+    font-family: 'Itim', cursive;
+    border: 0; 
+    padding: 7px 0px 8px 10px; 
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box; letter-spacing: 1px;
+    outline: none;
+    box-shadow: 0px 1px 4px grey;
+}
+
+#input ~ .focus-border { 
+    position: absolute; 
+    bottom: 0; 
+    left: 32px; 
+    width: 0px; 
+    height: 2px; 
+    background-color: #4caf50; 
+    transition: 0.4s;
+}
+
+#input:focus ~ .focus-border {
+    width: 94%; 
+    transition: 0.4s;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.clear i{
+    cursor: pointer;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.clear i:hover{
+    transform: rotate(45deg);
+}
+
+#add {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #input {
+        width: 420px;
+    }
+
+    #input:focus ~ .focus-border {
+        width: 93%; 
+    }
+}
