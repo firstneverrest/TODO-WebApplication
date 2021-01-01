@@ -162,3 +162,33 @@ ul {
         width: 93%; 
     }
 }
+
+@media only screen and (max-width: 500px) {
+    #input {
+        width: 350px;
+    }
+
+    #input:focus ~ .focus-border {
+        width: 92%; 
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #input {
+        width: 300px;
+    }
+
+    #input:focus ~ .focus-border {
+        width: 90%; 
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #input {
+        width: 250px;
+    }
+
+    #input:focus ~ .focus-border {
+        width: 89%; 
+    }
+}
